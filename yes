@@ -15,13 +15,13 @@ local Mouse = LocalPlayer:GetMouse()
 -- // Silent Aim Vars
 getgenv().ValiantAimHacks = {
     SilentAimEnabled = true,
-    ShowFOV = true,
+    ShowFOV = false,
     VisibleCheck = true,
     TeamCheck = true,
     FOV = 16.5,
     HitChance = 100,
     Selected = LocalPlayer,
-    TargetPart = "Head",
+    TargetPart = "Head", "HumanoidRootPart"},
     BlacklistedTeams = {
         {
             Team = LocalPlayer.Team,
@@ -29,7 +29,7 @@ getgenv().ValiantAimHacks = {
         },
     },
     BlacklistedPlayers = {LocalPlayer},
-    WhitelistedPUIDs = {91318356},
+    WhitelistedPUIDs = {
 }
 
 -- // Show FOV
